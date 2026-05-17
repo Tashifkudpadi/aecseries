@@ -19,14 +19,7 @@ function AboutOrganiser() {
           initial="hidden"
           whileInView="show"
           viewport={VIEWPORT}
-          className="
-grid grid-cols-1 items-center gap-12
-rounded-3xl border border-ink-200
-bg-white p-8
-shadow-[0_10px_40px_rgba(15,23,42,0.06)]
-dark:border-ink-800 dark:bg-ink-900
-sm:p-12
-lg:grid-cols-12 lg:gap-16
+          className="grid grid-cols-1 items-center gap-12 rounded-3xl border border-ink-200 bg-white p-8 shadow-[0_10px_40px_rgba(15,23,42,0.06)] dark:border-ink-800 dark:bg-ink-900 sm:p-12 lg:grid-cols-12 lg:gap-16
 "
         >
           <div className="relative flex flex-col items-start lg:col-span-4">
@@ -76,26 +69,6 @@ lg:grid-cols-12 lg:gap-16
               bodies, and technology providers, driving innovation,
               collaboration, and long-term business value.
             </p>
-
-            <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3">
-              {[
-                { value: "12+", label: "Years of Expertise" },
-                { value: "50+", label: "Conferences Hosted" },
-                { value: "20K+", label: "Leaders Engaged" },
-              ].map((s) => (
-                <div
-                  key={s.label}
-                  className="rounded-xl border border-ink-200 bg-gradient-to-br from-white to-ink-50 px-4 py-3 dark:border-ink-800 dark:from-ink-900 dark:to-ink-950"
-                >
-                  <div className="bg-gradient-to-br from-brand-600 to-indigo-500 bg-clip-text text-2xl font-bold text-transparent">
-                    {s.value}
-                  </div>
-                  <div className="mt-0.5 text-[11.5px] font-medium text-ink-500 dark:text-ink-400">
-                    {s.label}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </motion.div>
       </div>
