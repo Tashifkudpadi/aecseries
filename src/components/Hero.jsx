@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { hero } from "../data/content";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo.png";
 import { fadeUp, paragraph, stagger, VIEWPORT } from "../lib/motion";
 
 function Hero() {
